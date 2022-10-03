@@ -1,6 +1,7 @@
-
 #include <unistd.h>
-int main(){
-	char tablo[100] = "Hello World";
-	write(1,&tablo,100);
+
+int main(void)
+{
+	char	tablo[11]= "Hello World";
+	write(1, &tablo, 11);
 }
