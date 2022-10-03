@@ -1,21 +1,16 @@
+#include <unistd.h>
 #include <stdio.h>
 #include <stdbool.h>
 
-bool o_pow3(int n)
+bool	o_pow3(int n)
 {
-	if(n==1)
+	if (n == 1)
 	{
-		return true;
+		return (true);
 	}
-	if(n%3 != 0)
+	if (n % 3 != 0)
 	{
-		return false;
+		return (false);
 	}
-	o_pow3(n/3);
-}
-
-int main()
-{
-	int res = 9;
-	printf("%s\n", o_pow3(res)?"true":"false");
+	o_pow3(n / 3);
 }
