@@ -1,7 +1,6 @@
-#include <unistd.h>
 #include <stdio.h>
 
-int o_charpos(char *str, char c){//renvoyer la position de c dans str -1 sinon
+int o_charpos(char *str, char c){
 
 	int cpt;
 	for(cpt = 0; cpt<sizeof(str);cpt++){
