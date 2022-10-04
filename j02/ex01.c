@@ -9,7 +9,7 @@ void o_print_char(char c)
 
 void o_print_string(char *str)
 {
-	int i;
+	int i = 0;
 
 	while(str[i] != '\0')
 	{
