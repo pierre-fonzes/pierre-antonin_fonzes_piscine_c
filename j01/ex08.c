@@ -12,5 +12,5 @@ bool	o_pow3(int n)
 	{
 		return (false);
 	}
-	o_pow3(n / 3);
+	return o_pow3(n / 3);
 }
