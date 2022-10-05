@@ -39,9 +39,16 @@ char * o_strncpy(char *str, int taille, int n)
 		}
 	}
 	else{
-		for(i = 0; i < n ; i++)
+		for(i = 0; i < taille ; i++)
 		{
-			copie[i] = str[i];
+			if( i < n )
+			{
+				copie[i] = str[i];
+			}
+			else
+			{
+				copie[i] = '\0';
+			}
 		}
 	}
 	return ptr;
