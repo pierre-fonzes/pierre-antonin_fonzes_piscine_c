@@ -15,5 +15,5 @@ void o_print_number(int nb)
 		o_print_number(nb/10);
 	}
 	cp = nb%10 + 48;//48 = 0 in ASCII table so -> if we want the ASCII code for 7 : 48 + 7
-	write(1,&d,1);
+	write(1,&cp,1);
 }
