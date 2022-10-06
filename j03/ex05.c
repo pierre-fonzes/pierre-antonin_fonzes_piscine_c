@@ -10,6 +10,7 @@ struct list{
 
 void affiche_linked_list(list *liste){
 	linkedList *actuel = liste->premier;
+	int cpt;
 	while(actuel!= NULL){
 		int i = 0;
 		while(actuel->data[i] != '\0'){
@@ -17,8 +18,10 @@ void affiche_linked_list(list *liste){
 			i++;
 		}
 		write(1,"\n",1);
+		cpt++;
 		actuel = actuel->next;
 	}
+	write(1,&cpt,4);
 }
 
 list *init(){
