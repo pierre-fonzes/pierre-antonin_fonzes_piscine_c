@@ -1,0 +1,1 @@
+int lettreDansMot(char lettre, char *motSecret);
